@@ -234,6 +234,45 @@ hr {
 }
 
 /*....................Interests..................*/
+#interests {
+    background-color: #f1f1f1;
+}
+
+.interestsvids {
+    padding-bottom: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 900px) {
+    .interestsvids {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+  .interestsvids iframe {
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 330%;
+      height: 190px;
+}
+
+@media only screen and (max-width: 414px) {
+    .interestsvids iframe {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .secondvid {
+      margin-top: 40px;
+  }
+
 
 /*....................Contact..................*/
 
