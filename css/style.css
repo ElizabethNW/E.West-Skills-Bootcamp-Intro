@@ -241,7 +241,7 @@ hr {
 .interestsvids {
     padding-bottom: 40px;
     width: fit-content;
-    margin: 0 auto;
+    margin:0 auto;
     text-align: -webkit-center;
 }
 
@@ -252,11 +252,10 @@ hr {
     }
   }
 
-
   .interestsvids iframe {
       margin-left: 40px;
       margin-right: 40px;
-      width: 330%;
+      width: 330px;
       height: 190px;
 }
 
