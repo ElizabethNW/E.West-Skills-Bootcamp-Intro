@@ -7,7 +7,46 @@ html {
 
 
 
+  .menuitem {
+    list-style: none;
+    font-family: "Exo", sans-serif;
+    display: inline-block;
+    padding: 20px;
+    height: 70px;
+} 
 
+.menuitem a h4 {
+    color:#777777;
+    font-size: 23px;
+}
+
+
+.header{
+    position: relative;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.headnavbar {
+    width: 100%;
+    padding: 0px;
+}
+
+.dropdown{
+    margin-right: 15px;
+}
+
+.navbar {
+    height: 75px;
+}
+
+.headnavbar .dropdown {
+    background-color:#918e8e;
+}
+
+#navbarNavDropdown {
+    background-color:#fafafa;
+}
 
 
 
