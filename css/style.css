@@ -63,7 +63,7 @@ html {
 /*....................footer..................*/
 
 #footer {
-    background-color: #dac2c2;
+    background-color: #9e9898;
     padding: 20px;
     min-height: 100px;
 }
@@ -94,6 +94,6 @@ html {
 }
 
 .social-links li a i:hover {
-    background: #dac2c2;
+    background: #9e9898;
 }
 
