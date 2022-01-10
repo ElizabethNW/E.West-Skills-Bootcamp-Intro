@@ -1,6 +1,6 @@
 # Newcastle College Digital Skills Bootcamp - Web Development Week 1 Assignment
 
-## A website about myself to illustrate my knowledge of HTML, CSS, Embedding Videos and Images. 
+## A website about myself to illustrate my knowledge of HTML, CSS, Embedding Videos, Images and  responsive webpage. 
 
 
 [Click here to view page] (https://elizabethnw.github.io/E.West-Skills-Bootcamp-Intro/) 
