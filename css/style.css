@@ -87,7 +87,56 @@ hr {
 }
 
 /*....................About Me..................*/
+#aboutme {
+    background-color: #f1f1f1;
+}
 
+.aboutmeimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border: 3px #918e8e solid;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutmeimage {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.abouttext {
+   font-family: "Exo", sans-serif; 
+   text-align: center;
+   padding-bottom: 50px;
+   padding-top: 30px;
+}
+
+@media only screen and (max-width: 950px) {
+  .abouttext {
+    padding: 40px;
+  }
+}
+
+.abouttext p i {
+    font-size: 30px;
+    padding-left: 10px;
+    color: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.abouttext p i:hover {
+    color: #484949;
+}
 /*....................Skills..................*/
 #myskills {
     background-color: #ddd4d4;
