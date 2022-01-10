@@ -33,7 +33,8 @@ The Website is split into four sections for easy flow
 
     * [Exo](https://fonts.google.com/specimen/Exo?query=exo) font used throughout all text.
     * [Qwigley](https://fonts.google.com/specimen/Qwigley?query=qwigley) font used for my header name to draw in attention.
-    
+    * Sans Serif is used as the fallback font in case for any reason, the font isn't being imported 
+      into the site correctly.
     
 -   ###    Imagery
 
