@@ -7,7 +7,17 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        
+        <!-- Email JS -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_d1oKOZEWf4eIedK3zMVgl");
+                emailjs.send("service_78z8ikf","template_k1qm4yp", {
+                    
+                })
+            })();
+            </script>
         <title>E.West Frontend Web Developer</title>
     </head>
     
@@ -55,13 +65,6 @@
                 </div>
                 
             </nav>
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-             <input type="checkbox" id="checkbox" />
-             <div class="slider round"></div>
-           </label>
-             <em>Dark Mode</em>
-           </div>
              <!-- Main Image on page-->
 
             <div class="container-fluid header">
@@ -188,20 +191,31 @@
              </div>
              <div class="container-fluid">
                 <div class="row contactform">
-                   <form class="col-12 contactform">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" required />
-                      <br>
-                      <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required />
-                      <br>
-                      <textarea name="message" class="form-control" id="message" placeholder="Message..." rows="5" required></textarea>
-                      <br>
-                      <div class="form-row text-center">
-                         <div class="col">
-                            <button type="submit" class="btn btn-secondary">Submit</button>
-                            <br>
-                         </div>
-                      </div>
-                   </form>
+                    <form onsubmit="return sendMail(this);" id="mail-form">
+                        <div class="row center-form align-items-center message-form">
+                            <label for="subject">Subject :</label>
+                            <select class="form-control custom-select" id="subject" required>
+                                <option selected disabled value="">Please select a type of subject.</option>
+                                <option value="General">General question about Nigeria</option>
+                                <option value="Language">Language or translation</option>                          
+                                <option value="Other">Other</option>
+                            </select>
+    
+                            <label for="name">Name : </label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required />
+    
+                            <label for="email">E-mail : </label>
+                            <input type="email" name="emailaddress" class="form-control" id="email" placeholder="E-mail" required />
+    
+                            <label for="message">Message : </label>
+                            <textarea rows="5" name="projectsummary" class="form-control" id="message" placeholder="Message" required></textarea>
+                            <br />
+                            <div id="send-button-group">
+                                <button class="btn btn-info center-block" type="submit" value="Submit">Send</button>
+                                <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
              </div>
         </section>
