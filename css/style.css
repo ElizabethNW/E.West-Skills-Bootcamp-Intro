@@ -126,6 +126,13 @@ hr {
     background-color:#fafafa;
 }
 
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
 
 [data-theme="dark"] {
   --primary-color: #9A97F3;
